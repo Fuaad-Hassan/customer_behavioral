@@ -1,0 +1,9 @@
+# Ingestion & Data Processing
+kagglehub
+polars
+
+# Machine Learning & MLOps (per blueprint)
+scikit-learn
+xgboost
+mlflow
+scipy

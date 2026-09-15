@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  behavioral_inference_api:
+    build:
+      # Context is set to the parent directory (project root) 
+      # so the Dockerfile can access src/, mlruns/, and mlflow.db
+      context: ../
+      dockerfile: docker/Dockerfile.serve
+    container_name: behavioral_inference_engine
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1

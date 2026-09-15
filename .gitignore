@@ -1,0 +1,46 @@
+# Ignore data directories to prevent committing massive datasets
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+project_blueprint.md
+# MLOps Artifacts
+mlruns/
+*.db
+mlflow.db
+
